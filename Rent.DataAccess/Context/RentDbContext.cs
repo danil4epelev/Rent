@@ -1,0 +1,21 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Rent.DataAccess.Entity;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rent.DataAccess.Context
+{
+	public class RentDbContext : DbContext
+	{
+		public RentDbContext([NotNull] DbContextOptions options) : base (options)
+		{
+
+		}
+
+		public virtual DbSet<User> User { get; set; }
+	}
+}

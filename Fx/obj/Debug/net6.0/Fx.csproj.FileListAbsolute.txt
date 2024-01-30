@@ -1,0 +1,12 @@
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\bin\Debug\net6.0\Fx.deps.json
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\bin\Debug\net6.0\Fx.dll
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\bin\Debug\net6.0\Fx.pdb
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.csproj.AssemblyReference.cache
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.AssemblyInfoInputs.cache
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.AssemblyInfo.cs
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.csproj.CoreCompileInputs.cache
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.dll
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\refint\Fx.dll
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\Fx.pdb
+C:\Users\DVChepelev2\source\repos\RentApplication\Fx\obj\Debug\net6.0\ref\Fx.dll
