@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mTQDnEOkJ5bgcTx+sczXYekiKDVoUK/myOUd3ylQSh9DVSvLoIUdTf6dPeGUv715csS+hp77MrHnWe1aTyOmXA==",
+  "dgSpecHash": "JlMvdMzlcRB1MGuZxWy3qli8dJsYZPfGI6ahm86wvl1NUV6dQJvJPUAbrk24NuIYuWCEnxUveYLs/dQn8BEzUA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\RentApplication\\RentApplication.csproj",
+  "projectFilePath": "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\RentApplication\\RentApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DVChepelev2\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\DVChepelev2\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

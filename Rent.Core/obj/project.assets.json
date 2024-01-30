@@ -1111,11 +1111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Rent.Core\\Rent.Core.csproj",
+      "projectUniqueName": "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Rent.Core\\Rent.Core.csproj",
       "projectName": "Rent.Core",
-      "projectPath": "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Rent.Core\\Rent.Core.csproj",
+      "projectPath": "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Rent.Core\\Rent.Core.csproj",
       "packagesPath": "C:\\Users\\DVChepelev2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Rent.Core\\obj\\",
+      "outputPath": "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Rent.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -1140,11 +1140,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Fx\\Fx.csproj": {
-              "projectPath": "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Fx\\Fx.csproj"
+            "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Fx\\Fx.csproj": {
+              "projectPath": "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Fx\\Fx.csproj"
             },
-            "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Rent.DataAccess\\Rent.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\DVChepelev2\\source\\repos\\RentApplication\\Rent.DataAccess\\Rent.DataAccess.csproj"
+            "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Rent.DataAccess\\Rent.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\DVChepelev2\\source\\repos\\Rent\\Rent.DataAccess\\Rent.DataAccess.csproj"
             }
           }
         }
