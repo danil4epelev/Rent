@@ -149,7 +149,45 @@ namespace RentApplication.Controllers
 				return BadRequest("Код для подтверждения неверный.");
 			}
 
+			return Ok();
+		}
 
+		[HttpPost]
+		[Route("resetpassword")]
+		public async Task<IActionResult> RessetPassword([FromBody] ApprooveResetPasswordModel modelRegister)
+		{
+			if (modelRegister == null)
+			{
+				return BadRequest("Отсутствует модель данных для запроса");
+			}
+
+			var model = _cacheHelper.GetApproveModel(modelRegister.ModelId);
+
+			if (model == null)
+			{
+				return BadRequest("Не найдена модель данных. Вероятно, истёк срок действия кода.");
+			}
+
+			if (model.ApproveCode != modelRegister.ApproveCode)
+			{
+				return BadRequest("Код для подтверждения неверный.");
+			}
+
+			var errorList = new List<string>();
+			if (!ValidatePassword(modelRegister.Password, errorList))
+			{
+				return BadRequest(errorList);
+			}
+
+			var user = _userManager.GetList().Where(t => t.Email == model.Email).SingleOrDefault();
+			if (user == null)
+			{
+				return BadRequest("Пользователь не найден");
+			}
+
+			user.PasswordHash = _hasherHelper.HashPassword(modelRegister.Password);
+
+			await _userManager.UpdateAsync(user.Id, user);
 
 			return Ok();
 		}
