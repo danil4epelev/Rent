@@ -1,5 +1,4 @@
-﻿using Rent.Core.Contracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
@@ -7,10 +6,11 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Rent.Core.Common.Configuration;
+using Rent.Core.Contracts.Helpers;
 
 namespace Rent.Core.Helpers
 {
-	public class MailHelper : IMailHelper
+    public class MailHelper : IMailHelper
 	{
 		private readonly MailSettings _mailSettings;
 

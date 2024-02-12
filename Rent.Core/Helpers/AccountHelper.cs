@@ -1,4 +1,5 @@
-﻿using Rent.Core.Contracts;
+﻿using Rent.Core.Contracts.Helpers;
+using Rent.Core.Contracts.Managers;
 using Rent.Core.Managers.Data;
 using Rent.DataAccess.Enum;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Rent.Core.Helpers
 {
-	public class AccountHelper : IAccountHelper
+    public class AccountHelper : IAccountHelper
 	{
 		private readonly IHasherHelper _hasherHelper;
 		private readonly IUserManager _userManager;

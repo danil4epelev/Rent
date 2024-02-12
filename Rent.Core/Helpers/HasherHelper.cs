@@ -1,4 +1,4 @@
-﻿using Rent.Core.Contracts;
+﻿using Rent.Core.Contracts.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Rent.Core.Helpers
 {
-	public class HasherHelper : IHasherHelper
+    public class HasherHelper : IHasherHelper
 	{
 		public string HashPassword(string password)
 		{

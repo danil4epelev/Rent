@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Fx.Ef;
-using Rent.Core.Contracts;
+using Rent.Core.Contracts.Managers;
 using Rent.Core.Managers.Data;
 using Rent.DataAccess.Entity;
 using System;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Rent.Core.Managers
 {
-	public class UserManager : BaseManager<User, UserData>, IUserManager
+    public class UserManager : BaseManager<User, UserData>, IUserManager
 	{
 		public UserManager(IEntityRepository<User> repository, IMapper mapper) : base(repository, mapper)
 		{

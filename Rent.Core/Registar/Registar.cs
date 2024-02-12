@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Rent.Core.Common.Configuration;
-using Rent.Core.Contracts;
+using Rent.Core.Contracts.Helpers;
+using Rent.Core.Contracts.Managers;
 using Rent.Core.Helpers;
 using Rent.Core.Managers;
 using System;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Rent.Core.Registar
 {
-	public static class Registar
+    public static class Registar
 	{
 		public static void RegisterCore(this IServiceCollection services)
 		{
@@ -31,6 +32,8 @@ namespace Rent.Core.Registar
 		private static void RegisterManagers(IServiceCollection services)
 		{
 			services.AddScoped<IUserManager, UserManager>();
+			services.AddScoped<IChapterManager, ChapterManager>();
+			services.AddScoped<IRentItemManager, RentItemManager>();
 		}
 
 		public static void RegisterSettings(this IServiceCollection services,

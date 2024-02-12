@@ -10,6 +10,9 @@ namespace Rent.Core.Managers.Profiles
 		{
 			CreateMap<User, UserData>();
 			CreateMap<UserData, User>();
+
+			CreateMap<Chapter, ChapterData>();
+			CreateMap<ChapterData, Chapter>();
 		}
 	}
 }

@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Rent.Core.Contracts;
 using RentApplication.Models;
 using System.Security.Claims;
 using Rent.DataAccess.Enum;
@@ -7,10 +6,12 @@ using Microsoft.AspNetCore.Authentication;
 using System.Text.RegularExpressions;
 using Rent.Core.Models;
 using Rent.Core.Exceptions;
+using Rent.Core.Contracts.Helpers;
+using Rent.Core.Contracts.Managers;
 
 namespace RentApplication.Controllers
 {
-	[ApiController]
+    [ApiController]
 	[Route("api/account")]
 	public class UserController : ControllerBase
 	{
@@ -192,7 +193,7 @@ namespace RentApplication.Controllers
 			return Ok();
 		}
 
-		[HttpGet]
+		[HttpPost]
 		[Route("login")]
 		public async Task<IResult> Login([FromBody] LoginUserModels model)
 		{

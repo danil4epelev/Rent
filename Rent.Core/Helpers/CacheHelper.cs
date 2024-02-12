@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
-using Rent.Core.Contracts;
+using Rent.Core.Contracts.Helpers;
 using Rent.Core.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Rent.Core.Helpers
 {
-	public class CacheHelper : ICacheHelper
+    public class CacheHelper : ICacheHelper
 	{
 		private readonly IMemoryCache _memoryCache;
 		private readonly MemoryCacheEntryOptions _cacheEntryOptions;

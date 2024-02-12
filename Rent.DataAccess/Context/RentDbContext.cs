@@ -17,5 +17,7 @@ namespace Rent.DataAccess.Context
 		}
 
 		public virtual DbSet<User> User { get; set; }
+		public virtual DbSet<Chapter> Chapter { get; set; }
+		public virtual DbSet<RentItem> RentItem { get; set; }
 	}
 }
