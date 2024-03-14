@@ -16,6 +16,9 @@ namespace Rent.DataAccess.Context
 
 		}
 
+		public virtual DbSet<RentItemPropertiesConnection> RentItemPropertiesConnection { get; set; }
+		public virtual DbSet<ChapterPropertiesConnection> ChapterPropertiesConnection { get; set; }
+		public virtual DbSet<Properties> Properties { get; set; }
 		public virtual DbSet<User> User { get; set; }
 		public virtual DbSet<Chapter> Chapter { get; set; }
 		public virtual DbSet<RentItem> RentItem { get; set; }

@@ -13,6 +13,18 @@ namespace Rent.Core.Managers.Profiles
 
 			CreateMap<Chapter, ChapterData>();
 			CreateMap<ChapterData, Chapter>();
+
+			CreateMap<RentItem, RentItemData>();
+			CreateMap<RentItemData, RentItem>();
+
+			CreateMap<Properties, PropertiesData>();
+			CreateMap<PropertiesData, Properties>();
+
+			CreateMap<ChapterPropertiesConnection, ChapterPropertiesConnectionData>();
+			CreateMap<ChapterPropertiesConnectionData, ChapterPropertiesConnection>();
+
+			CreateMap<RentItemPropertiesConnection, RentItemPropertiesConnectionData>();
+			CreateMap<RentItemPropertiesConnectionData, RentItemPropertiesConnection>();
 		}
 	}
 }

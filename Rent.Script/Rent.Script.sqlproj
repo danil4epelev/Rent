@@ -62,5 +62,6 @@
     <Build Include="Scripts\24-01-22_create_user_table.sql" />
     <Build Include="Scripts\24-01-31_create_chapter_table.sql" />
     <Build Include="Scripts\24-02-02_create_rent_item_table.sql" />
+    <Build Include="Scripts\24-03-12_create_properties_tables.sql" />
   </ItemGroup>
 </Project>

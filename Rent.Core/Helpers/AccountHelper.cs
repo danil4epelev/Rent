@@ -28,7 +28,7 @@ namespace Rent.Core.Helpers
 				Email = email,
 				PasswordHash = _hasherHelper.HashPassword(password),
 				Login = email,
-				RoleType = (int)Roles.Default
+				RoleType = (int)RolesEnum.Default
 			});
 
 		}

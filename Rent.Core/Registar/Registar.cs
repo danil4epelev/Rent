@@ -34,6 +34,9 @@ namespace Rent.Core.Registar
 			services.AddScoped<IUserManager, UserManager>();
 			services.AddScoped<IChapterManager, ChapterManager>();
 			services.AddScoped<IRentItemManager, RentItemManager>();
+			services.AddScoped<IChapterPropertiesConnectionManager, ChapterPropertiesConnectionManager>();
+			services.AddScoped<IPropertiesManager, PropertiesManager>();
+			services.AddScoped<IRentItemPropertiesConnectionManager, RentItemPropertiesConnectionManager>();
 		}
 
 		public static void RegisterSettings(this IServiceCollection services,

@@ -11,6 +11,9 @@ namespace Rent.DataAccess.Registar
 			services.AddScoped<IEntityRepository<User>, EntityRepository<User>>();
 			services.AddScoped<IEntityRepository<Chapter>, EntityRepository<Chapter>>();
 			services.AddScoped<IEntityRepository<RentItem>, EntityRepository<RentItem>>();
+			services.AddScoped<IEntityRepository<ChapterPropertiesConnection>, EntityRepository<ChapterPropertiesConnection>>();
+			services.AddScoped<IEntityRepository<RentItemPropertiesConnection>, EntityRepository<RentItemPropertiesConnection>>();
+			services.AddScoped<IEntityRepository<Properties>, EntityRepository<Properties>>();
 		}
 	}
 }

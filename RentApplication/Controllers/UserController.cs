@@ -8,6 +8,7 @@ using Rent.Core.Models;
 using Rent.Core.Exceptions;
 using Rent.Core.Contracts.Helpers;
 using Rent.Core.Contracts.Managers;
+using Fx.Auth;
 
 namespace RentApplication.Controllers
 {
@@ -211,14 +212,15 @@ namespace RentApplication.Controllers
 			var claims = new List<Claim>
 			{
 				new Claim(ClaimsIdentity.DefaultNameClaimType, user.Login),
-				new Claim(ClaimsIdentity.DefaultRoleClaimType, RolesChunk.GetList().Where(t => t.Value == user.RoleType).SingleOrDefault()?.Name)
+				new Claim(ClaimsIdentity.DefaultRoleClaimType, RolesChunk.GetList().Where(t => t.Value == user.RoleType).SingleOrDefault()?.Name),
+				new Claim(CustomClaimsTypes.Id, user.Id.ToString())
 			};
 
 			var claimsIdentity = new ClaimsIdentity(claims, "Cookies");
 			var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
 			await _contextAccessor.HttpContext?.SignInAsync(claimsPrincipal);
-
+			
 			return Results.Ok();
 		}
 

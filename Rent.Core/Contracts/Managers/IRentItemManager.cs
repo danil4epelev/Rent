@@ -10,5 +10,6 @@ namespace Rent.Core.Contracts.Managers
 {
 	public interface IRentItemManager : IBaseManager<RentItemData>
 	{
+		public IQueryable<RentItemData> GetActiveItems();
 	}
 }

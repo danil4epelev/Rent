@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Rent.DataAccess.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Rent.Core.Managers.Data

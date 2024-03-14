@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Rent.DataAccess.Enum
 {
-	public enum Roles
+	public enum RolesEnum
 	{
 		Default = 10,
 		Admin = 20

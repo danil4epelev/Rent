@@ -32,4 +32,25 @@ ALTER TABLE IF EXISTS public."RentItem"
 
 
 ALTER TABLE IF EXISTS public."RentItem"
-    ADD COLUMN "IsModerated" boolean NOT NULL DEFAULT FALSE;
+    ADD COLUMN "DtCreate" date NOT NULL;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "DtApprove" date;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "DtUpToSearch" date;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "Properties" character varying;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "Status" integer NOT NULL;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "DtSendToModeration" date;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "RejectedRemarks" character varying;
+
+ALTER TABLE IF EXISTS public."RentItem"
+    ADD COLUMN "DtReject" date;
