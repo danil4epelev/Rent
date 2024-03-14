@@ -41,9 +41,6 @@ ALTER TABLE IF EXISTS public."RentItem"
     ADD COLUMN "DtUpToSearch" date;
 
 ALTER TABLE IF EXISTS public."RentItem"
-    ADD COLUMN "Properties" character varying;
-
-ALTER TABLE IF EXISTS public."RentItem"
     ADD COLUMN "Status" integer NOT NULL;
 
 ALTER TABLE IF EXISTS public."RentItem"

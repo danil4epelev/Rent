@@ -18,7 +18,6 @@ namespace Rent.Core.Managers.Data
 		public int PriceType { get; set; }
 		public long AuthorId { get; set; }
 		public long? ModeratorId { get; set; }
-		public string Properties { get; set; }
 		public DateTime DtCreate { get; set; }
 		public DateTime? DtApprove { get; set; }
 		public DateTime? DtUpToSearch { get; set; }

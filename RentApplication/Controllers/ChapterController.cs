@@ -341,14 +341,16 @@ namespace RentApplication.Controllers
 				return BadRequest($"Раздел с id {chapterId} не найден.");
 			}
 
-			var properties = _chapterHelper.GetAllTreePropertiesByChapter(chapterId);
-
-			if (properties == null)
+			try
 			{
-				return BadRequest("Не найдены родительские разделы");
-			}
+				var properties = _chapterHelper.GetAllTreePropertiesByChapter(chapterId);
 
-			return Ok(properties);
+				return Ok(properties);
+			}
+			catch (Exception ex)
+			{
+				return BadRequest(ex.Message);
+			}
 		}
 
 		[HttpGet]

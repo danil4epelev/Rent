@@ -96,6 +96,11 @@ namespace RentApplication.Controllers
 				return NotFound("Не найден раздел");
 			}
 
+			if (_chapterManager.GetList().Where(t => t.ParentChapterId == chapter.Id).Any())
+			{
+				return BadRequest("Раздел должен быть конечным в дереве");
+			}	
+
 			var propertiesChapter = _chapterHelper.GetAllTreePropertiesByChapter(chapter.Id);
 
 			if (propertiesChapter == null)
@@ -111,37 +116,6 @@ namespace RentApplication.Controllers
 			if (data.Price <= 0)
 			{
 				return BadRequest("Цена не может быть меньше или равна 0");
-			}
-			
-			var errorProperties = new List<string>();
-
-			foreach (var property in data.Propertes)
-			{
-				var currentProperty = propertiesChapter.Where(t => t.Name == property.Name).SingleOrDefault();
-				if (currentProperty == null)
-				{
-					errorProperties.Add($"Наименование {property.Name} не найдено");
-				}
-
-				if (!currentProperty.Values.Where(t => t == property.Value).Any())
-				{
-					if (!string.IsNullOrEmpty(property.Value))
-					{
-						errorProperties.Add($"Значение {property.Value} не найдено");
-					}
-					else
-					{
-						if (currentProperty.IsRequired)
-						{
-							errorProperties.Add($"Поле {property.Name} является обязательным для заполнения");
-						}
-					}
-				}
-			}
-
-			if (errorProperties.Any())
-			{
-				return BadRequest(errorProperties);
 			}
 
 			await _rentItemManager.AddAsync(new Rent.Core.Managers.Data.RentItemData

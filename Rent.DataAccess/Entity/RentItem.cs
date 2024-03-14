@@ -14,7 +14,6 @@ namespace Rent.DataAccess.Entity
 		public decimal Price { get; set; }
 		public int PriceType { get; set; }
 		public long AuthorId { get; set; }
-		public string Properties { get; set; }
 		public Chapter Chapter { get; set; }
 		public User Author { get; set; }
 		public User Moderator { get; set; }
