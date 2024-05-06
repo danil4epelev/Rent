@@ -12,7 +12,7 @@
 
 	public class RentItemPropertyModel
 	{
-		public string Name { get; set; }
-		public string Value { get; set; }
+		public long Id { get; set; }
+		public object Value { get; set; }
 	}
 }
